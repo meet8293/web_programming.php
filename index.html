@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        table 
+        {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        div 
+         {
+            margin: 70px;
+            border: 1px solid  #bbb7b7;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><p style="color:white";><b>DATE</b></p></td>
+            <td><p style="color:white";><b>MONTH</b></p></td>
+            <td><p style="color:white";><b>YEAR</b></p></td>
+        </tr>
+
+        <tr> 
+            <td colspan="3">
+            <div class="date" id="date"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td><p style="color:white";><b>HOUR</b></p></td>
+            <td><p style="color:white";><b>MINUTE</b></p></td>
+            <td><p style="color:white";><b>SECOND</b></p></td>
+        </tr>
+
+         <tr> 
+            <td colspan="3">
+            <div class="clock" id="clock"></div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="weekdays">
+        <label>
+            <input type="radio" name="weekday" id="sunday" disabled>
+            <span>SUN</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="monday" disabled>
+            <span>MON</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="tuesday" disabled>
+            <span>TUE</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="wednesday" disabled>
+            <span>WED</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="thursday" disabled>
+            <span>THU</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="friday" disabled>
+            <span>FRI</span>
+        </label>
+
+        <label>
+            <input type="radio" name="weekday" id="saturday" disabled>
+            <span>SAT</span>
+        </label>
+    </div>
+
+    <div class="temperature" id="temperature"></div>
+
+    <script src="script.js"></script>  
+</body>
+</html>

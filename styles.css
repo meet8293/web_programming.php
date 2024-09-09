@@ -1,0 +1,57 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: red;
+}
+
+.clock 
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.date 
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.temperature 
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.weekdays 
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.weekdays label 
+{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.weekdays input 
+{
+    display: none;
+}
+
+.weekdays input:checked + span
+ {
+    background-color: #61dafb;
+    color: #282c34;
+    border-radius: 50%;
+    padding: 10px;
+}
+
